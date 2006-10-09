@@ -19,8 +19,8 @@ Runtime requirements:
   libjpeg62-6b-11
   libpng12-1.2.8-2
   librsvg2-2.14.4-1
-  libtiff5-3.8.2-1
-  libwmf-0.2.8.4-1
+  libtiff5-3.8.2-2
+  libwmf027-0.2.8.4-2
   libxml2-2.6.26-1
   perl-5.8.7-5
   zlib-1.2.3-1
@@ -49,18 +49,18 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack ImageMagick-6.2.9.1-X-src.tar.bz2
+  unpack ImageMagick-6.2.9.4-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./ImageMagick-6.2.9.1-X.cygport all
+  cygport ./ImageMagick-6.2.9.4-X.cygport all
 
 This will create:
-  /usr/src/ImageMagick-6.2.9.1-X-src.tar.bz2
-  /usr/src/ImageMagick-6.2.9.1-X.tar.bz2
-  /usr/src/libMagick-devel-6.2.9.1-X.tar.bz2
-  /usr/src/libMagick10-6.2.9.1-X.tar.bz2
-  /usr/src/perl-Image-Magick-6.2.9.1-X.tar.bz2
+  /usr/src/ImageMagick-6.2.9.4-X-src.tar.bz2
+  /usr/src/ImageMagick-6.2.9.4-X.tar.bz2
+  /usr/src/libMagick-devel-6.2.9.4-X.tar.bz2
+  /usr/src/libMagick10-6.2.9.4-X.tar.bz2
+  /usr/src/perl-Image-Magick-6.2.9.4-X.tar.bz2
 
 -------------------------------------------
 
@@ -84,168 +84,168 @@ Files included in the binary packages:
   /usr/share/ImageMagick-6.2.9/config/coder.xml
   /usr/share/ImageMagick-6.2.9/config/log.xml
   /usr/share/ImageMagick-6.2.9/config/magic.xml
-  /usr/share/doc/Cygwin/ImageMagick-6.2.9.1.README
-  /usr/share/doc/ImageMagick-6.2.9.1/AUTHORS
-  /usr/share/doc/ImageMagick-6.2.9.1/ChangeLog
-  /usr/share/doc/ImageMagick-6.2.9.1/LICENSE
-  /usr/share/doc/ImageMagick-6.2.9.1/NEWS
-  /usr/share/doc/ImageMagick-6.2.9/images/arc.png
-  /usr/share/doc/ImageMagick-6.2.9/images/background.jpg
-  /usr/share/doc/ImageMagick-6.2.9/images/button.gif
-  /usr/share/doc/ImageMagick-6.2.9/images/configure.jpg
-  /usr/share/doc/ImageMagick-6.2.9/images/definitive-guide.png
-  /usr/share/doc/ImageMagick-6.2.9/images/difference.png
-  /usr/share/doc/ImageMagick-6.2.9/images/dogwaffle.jpg
-  /usr/share/doc/ImageMagick-6.2.9/images/donate.png
-  /usr/share/doc/ImageMagick-6.2.9/images/examples.jpg
-  /usr/share/doc/ImageMagick-6.2.9/images/frame.jpg
-  /usr/share/doc/ImageMagick-6.2.9/images/fuzzy-magick.png
-  /usr/share/doc/ImageMagick-6.2.9/images/granite.png
-  /usr/share/doc/ImageMagick-6.2.9/images/label.gif
-  /usr/share/doc/ImageMagick-6.2.9/images/logo.eps
-  /usr/share/doc/ImageMagick-6.2.9/images/logo.jpg
-  /usr/share/doc/ImageMagick-6.2.9/images/montage.jpg
-  /usr/share/doc/ImageMagick-6.2.9/images/piechart.png
-  /usr/share/doc/ImageMagick-6.2.9/images/reconstruct.jpg
-  /usr/share/doc/ImageMagick-6.2.9/images/red-ball.png
-  /usr/share/doc/ImageMagick-6.2.9/images/red-circle.png
-  /usr/share/doc/ImageMagick-6.2.9/images/right.gif
-  /usr/share/doc/ImageMagick-6.2.9/images/rose-over.png
-  /usr/share/doc/ImageMagick-6.2.9/images/rose.jpg
-  /usr/share/doc/ImageMagick-6.2.9/images/rose.png
-  /usr/share/doc/ImageMagick-6.2.9/images/script.png
-  /usr/share/doc/ImageMagick-6.2.9/images/smile.gif
-  /usr/share/doc/ImageMagick-6.2.9/images/sponsor.jpg
-  /usr/share/doc/ImageMagick-6.2.9/images/sprite.jpg
-  /usr/share/doc/ImageMagick-6.2.9/images/travelsur.gif
-  /usr/share/doc/ImageMagick-6.2.9/images/tricks.png
-  /usr/share/doc/ImageMagick-6.2.9/images/wand.ico
-  /usr/share/doc/ImageMagick-6.2.9/images/white-highlight.png
-  /usr/share/doc/ImageMagick-6.2.9/index.html
-  /usr/share/doc/ImageMagick-6.2.9/www/Magick++/Blob.html
-  /usr/share/doc/ImageMagick-6.2.9/www/Magick++/Cache.fig
-  /usr/share/doc/ImageMagick-6.2.9/www/Magick++/Cache.png
-  /usr/share/doc/ImageMagick-6.2.9/www/Magick++/Cache.svg
-  /usr/share/doc/ImageMagick-6.2.9/www/Magick++/ChangeLog.html
-  /usr/share/doc/ImageMagick-6.2.9/www/Magick++/CoderInfo.html
-  /usr/share/doc/ImageMagick-6.2.9/www/Magick++/Color.html
-  /usr/share/doc/ImageMagick-6.2.9/www/Magick++/Documentation.html
-  /usr/share/doc/ImageMagick-6.2.9/www/Magick++/Drawable.html
-  /usr/share/doc/ImageMagick-6.2.9/www/Magick++/Drawable_example_1.png
-  /usr/share/doc/ImageMagick-6.2.9/www/Magick++/Enumerations.html
-  /usr/share/doc/ImageMagick-6.2.9/www/Magick++/Exception.html
-  /usr/share/doc/ImageMagick-6.2.9/www/Magick++/FormatCharacters.html
-  /usr/share/doc/ImageMagick-6.2.9/www/Magick++/Future.html
-  /usr/share/doc/ImageMagick-6.2.9/www/Magick++/Geometry.html
-  /usr/share/doc/ImageMagick-6.2.9/www/Magick++/Image.fig
-  /usr/share/doc/ImageMagick-6.2.9/www/Magick++/Image.html
-  /usr/share/doc/ImageMagick-6.2.9/www/Magick++/Image.png
-  /usr/share/doc/ImageMagick-6.2.9/www/Magick++/ImageDesign.html
-  /usr/share/doc/ImageMagick-6.2.9/www/Magick++/ImageMagick.png
-  /usr/share/doc/ImageMagick-6.2.9/www/Magick++/Install.html
-  /usr/share/doc/ImageMagick-6.2.9/www/Magick++/Magick++.png
-  /usr/share/doc/ImageMagick-6.2.9/www/Magick++/Montage.html
-  /usr/share/doc/ImageMagick-6.2.9/www/Magick++/NEWS.html
-  /usr/share/doc/ImageMagick-6.2.9/www/Magick++/PixelPacket.html
-  /usr/share/doc/ImageMagick-6.2.9/www/Magick++/Pixels.html
-  /usr/share/doc/ImageMagick-6.2.9/www/Magick++/README.txt
-  /usr/share/doc/ImageMagick-6.2.9/www/Magick++/STL.html
-  /usr/share/doc/ImageMagick-6.2.9/www/Magick++/TypeMetric.html
-  /usr/share/doc/ImageMagick-6.2.9/www/Magick++/index.html
-  /usr/share/doc/ImageMagick-6.2.9/www/Magick++/montage-sample-framed.jpg
-  /usr/share/doc/ImageMagick-6.2.9/www/Magick++/right_triangle.png
-  /usr/share/doc/ImageMagick-6.2.9/www/Magick++/thumbnail-anatomy-framed.fig
-  /usr/share/doc/ImageMagick-6.2.9/www/Magick++/thumbnail-anatomy-framed.jpg
-  /usr/share/doc/ImageMagick-6.2.9/www/Magick++/thumbnail-anatomy-plain.fig
-  /usr/share/doc/ImageMagick-6.2.9/www/Magick++/thumbnail-anatomy-plain.jpg
-  /usr/share/doc/ImageMagick-6.2.9/www/Magick++/thumbnail-sample-framed.jpg
-  /usr/share/doc/ImageMagick-6.2.9/www/Magick++/thumbnail-sample-plain.jpg
-  /usr/share/doc/ImageMagick-6.2.9/www/advanced-unix-installation.html
-  /usr/share/doc/ImageMagick-6.2.9/www/advanced-windows-installation.html
-  /usr/share/doc/ImageMagick-6.2.9/www/animate.html
-  /usr/share/doc/ImageMagick-6.2.9/www/api.html
-  /usr/share/doc/ImageMagick-6.2.9/www/api/animate.html
-  /usr/share/doc/ImageMagick-6.2.9/www/api/annotate.html
-  /usr/share/doc/ImageMagick-6.2.9/www/api/attribute.html
-  /usr/share/doc/ImageMagick-6.2.9/www/api/blob.html
-  /usr/share/doc/ImageMagick-6.2.9/www/api/cache.html
-  /usr/share/doc/ImageMagick-6.2.9/www/api/color.html
-  /usr/share/doc/ImageMagick-6.2.9/www/api/colorspace.html
-  /usr/share/doc/ImageMagick-6.2.9/www/api/compare.html
-  /usr/share/doc/ImageMagick-6.2.9/www/api/composite.html
-  /usr/share/doc/ImageMagick-6.2.9/www/api/constitute.html
-  /usr/share/doc/ImageMagick-6.2.9/www/api/decorate.html
-  /usr/share/doc/ImageMagick-6.2.9/www/api/display.html
-  /usr/share/doc/ImageMagick-6.2.9/www/api/draw.html
-  /usr/share/doc/ImageMagick-6.2.9/www/api/drawing-wand.html
-  /usr/share/doc/ImageMagick-6.2.9/www/api/effect.html
-  /usr/share/doc/ImageMagick-6.2.9/www/api/enhance.html
-  /usr/share/doc/ImageMagick-6.2.9/www/api/exception.html
-  /usr/share/doc/ImageMagick-6.2.9/www/api/fx.html
-  /usr/share/doc/ImageMagick-6.2.9/www/api/image.html
-  /usr/share/doc/ImageMagick-6.2.9/www/api/layer.html
-  /usr/share/doc/ImageMagick-6.2.9/www/api/list.html
-  /usr/share/doc/ImageMagick-6.2.9/www/api/magick-attribute.html
-  /usr/share/doc/ImageMagick-6.2.9/www/api/magick-image.html
-  /usr/share/doc/ImageMagick-6.2.9/www/api/magick-wand.html
-  /usr/share/doc/ImageMagick-6.2.9/www/api/magick.html
-  /usr/share/doc/ImageMagick-6.2.9/www/api/memory.html
-  /usr/share/doc/ImageMagick-6.2.9/www/api/module.html
-  /usr/share/doc/ImageMagick-6.2.9/www/api/monitor.html
-  /usr/share/doc/ImageMagick-6.2.9/www/api/montage.html
-  /usr/share/doc/ImageMagick-6.2.9/www/api/paint.html
-  /usr/share/doc/ImageMagick-6.2.9/www/api/pixel-iterator.html
-  /usr/share/doc/ImageMagick-6.2.9/www/api/pixel-wand.html
-  /usr/share/doc/ImageMagick-6.2.9/www/api/profile.html
-  /usr/share/doc/ImageMagick-6.2.9/www/api/quantize.html
-  /usr/share/doc/ImageMagick-6.2.9/www/api/registry.html
-  /usr/share/doc/ImageMagick-6.2.9/www/api/resize.html
-  /usr/share/doc/ImageMagick-6.2.9/www/api/resource.html
-  /usr/share/doc/ImageMagick-6.2.9/www/api/segment.html
-  /usr/share/doc/ImageMagick-6.2.9/www/api/shear.html
-  /usr/share/doc/ImageMagick-6.2.9/www/api/signature.html
-  /usr/share/doc/ImageMagick-6.2.9/www/api/stream.html
-  /usr/share/doc/ImageMagick-6.2.9/www/api/transform.html
-  /usr/share/doc/ImageMagick-6.2.9/www/api/version.html
-  /usr/share/doc/ImageMagick-6.2.9/www/architecture.html
-  /usr/share/doc/ImageMagick-6.2.9/www/binary-releases.html
-  /usr/share/doc/ImageMagick-6.2.9/www/changelog.html
-  /usr/share/doc/ImageMagick-6.2.9/www/color.html
-  /usr/share/doc/ImageMagick-6.2.9/www/command-line-options.html
-  /usr/share/doc/ImageMagick-6.2.9/www/command-line-processing.html
-  /usr/share/doc/ImageMagick-6.2.9/www/command-line-tools.html
-  /usr/share/doc/ImageMagick-6.2.9/www/compare.html
-  /usr/share/doc/ImageMagick-6.2.9/www/composite.html
-  /usr/share/doc/ImageMagick-6.2.9/www/conjure.html
-  /usr/share/doc/ImageMagick-6.2.9/www/contact.html
-  /usr/share/doc/ImageMagick-6.2.9/www/convert.html
-  /usr/share/doc/ImageMagick-6.2.9/www/cvs.html
-  /usr/share/doc/ImageMagick-6.2.9/www/display.html
-  /usr/share/doc/ImageMagick-6.2.9/www/download.html
-  /usr/share/doc/ImageMagick-6.2.9/www/examples.html
-  /usr/share/doc/ImageMagick-6.2.9/www/formats.html
-  /usr/share/doc/ImageMagick-6.2.9/www/history.html
-  /usr/share/doc/ImageMagick-6.2.9/www/identify.html
-  /usr/share/doc/ImageMagick-6.2.9/www/import.html
-  /usr/share/doc/ImageMagick-6.2.9/www/index.html
-  /usr/share/doc/ImageMagick-6.2.9/www/install-source.html
-  /usr/share/doc/ImageMagick-6.2.9/www/license.html
-  /usr/share/doc/ImageMagick-6.2.9/www/links.html
-  /usr/share/doc/ImageMagick-6.2.9/www/magick-core.html
-  /usr/share/doc/ImageMagick-6.2.9/www/magick-vector-graphics.html
-  /usr/share/doc/ImageMagick-6.2.9/www/magick-wand.html
-  /usr/share/doc/ImageMagick-6.2.9/www/magick.css
-  /usr/share/doc/ImageMagick-6.2.9/www/mailing-list.html
-  /usr/share/doc/ImageMagick-6.2.9/www/miff.html
-  /usr/share/doc/ImageMagick-6.2.9/www/mogrify.html
-  /usr/share/doc/ImageMagick-6.2.9/www/montage.html
-  /usr/share/doc/ImageMagick-6.2.9/www/perl-magick.html
-  /usr/share/doc/ImageMagick-6.2.9/www/quantize.html
-  /usr/share/doc/ImageMagick-6.2.9/www/resources.html
-  /usr/share/doc/ImageMagick-6.2.9/www/search.html
-  /usr/share/doc/ImageMagick-6.2.9/www/sponsors.html
-  /usr/share/doc/ImageMagick-6.2.9/www/stream.html
-  /usr/share/doc/ImageMagick-6.2.9/www/subversion.html
+  /usr/share/doc/Cygwin/ImageMagick-6.2.9.4.README
+  /usr/share/doc/ImageMagick-6.2.9.4/AUTHORS
+  /usr/share/doc/ImageMagick-6.2.9.4/ChangeLog
+  /usr/share/doc/ImageMagick-6.2.9.4/LICENSE
+  /usr/share/doc/ImageMagick-6.2.9.4/NEWS
+  /usr/share/doc/ImageMagick-6.2.9.4/images/arc.png
+  /usr/share/doc/ImageMagick-6.2.9.4/images/background.jpg
+  /usr/share/doc/ImageMagick-6.2.9.4/images/button.gif
+  /usr/share/doc/ImageMagick-6.2.9.4/images/configure.jpg
+  /usr/share/doc/ImageMagick-6.2.9.4/images/definitive-guide.png
+  /usr/share/doc/ImageMagick-6.2.9.4/images/difference.png
+  /usr/share/doc/ImageMagick-6.2.9.4/images/dogwaffle.jpg
+  /usr/share/doc/ImageMagick-6.2.9.4/images/donate.png
+  /usr/share/doc/ImageMagick-6.2.9.4/images/examples.jpg
+  /usr/share/doc/ImageMagick-6.2.9.4/images/frame.jpg
+  /usr/share/doc/ImageMagick-6.2.9.4/images/fuzzy-magick.png
+  /usr/share/doc/ImageMagick-6.2.9.4/images/granite.png
+  /usr/share/doc/ImageMagick-6.2.9.4/images/label.gif
+  /usr/share/doc/ImageMagick-6.2.9.4/images/logo.eps
+  /usr/share/doc/ImageMagick-6.2.9.4/images/logo.jpg
+  /usr/share/doc/ImageMagick-6.2.9.4/images/montage.jpg
+  /usr/share/doc/ImageMagick-6.2.9.4/images/piechart.png
+  /usr/share/doc/ImageMagick-6.2.9.4/images/reconstruct.jpg
+  /usr/share/doc/ImageMagick-6.2.9.4/images/red-ball.png
+  /usr/share/doc/ImageMagick-6.2.9.4/images/red-circle.png
+  /usr/share/doc/ImageMagick-6.2.9.4/images/right.gif
+  /usr/share/doc/ImageMagick-6.2.9.4/images/rose-over.png
+  /usr/share/doc/ImageMagick-6.2.9.4/images/rose.jpg
+  /usr/share/doc/ImageMagick-6.2.9.4/images/rose.png
+  /usr/share/doc/ImageMagick-6.2.9.4/images/script.png
+  /usr/share/doc/ImageMagick-6.2.9.4/images/smile.gif
+  /usr/share/doc/ImageMagick-6.2.9.4/images/sponsor.jpg
+  /usr/share/doc/ImageMagick-6.2.9.4/images/sprite.jpg
+  /usr/share/doc/ImageMagick-6.2.9.4/images/travelsur.gif
+  /usr/share/doc/ImageMagick-6.2.9.4/images/tricks.png
+  /usr/share/doc/ImageMagick-6.2.9.4/images/wand.ico
+  /usr/share/doc/ImageMagick-6.2.9.4/images/white-highlight.png
+  /usr/share/doc/ImageMagick-6.2.9.4/index.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/Magick++/Blob.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/Magick++/Cache.fig
+  /usr/share/doc/ImageMagick-6.2.9.4/www/Magick++/Cache.png
+  /usr/share/doc/ImageMagick-6.2.9.4/www/Magick++/Cache.svg
+  /usr/share/doc/ImageMagick-6.2.9.4/www/Magick++/ChangeLog.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/Magick++/CoderInfo.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/Magick++/Color.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/Magick++/Documentation.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/Magick++/Drawable.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/Magick++/Drawable_example_1.png
+  /usr/share/doc/ImageMagick-6.2.9.4/www/Magick++/Enumerations.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/Magick++/Exception.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/Magick++/FormatCharacters.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/Magick++/Future.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/Magick++/Geometry.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/Magick++/Image.fig
+  /usr/share/doc/ImageMagick-6.2.9.4/www/Magick++/Image.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/Magick++/Image.png
+  /usr/share/doc/ImageMagick-6.2.9.4/www/Magick++/ImageDesign.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/Magick++/ImageMagick.png
+  /usr/share/doc/ImageMagick-6.2.9.4/www/Magick++/Install.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/Magick++/Magick++.png
+  /usr/share/doc/ImageMagick-6.2.9.4/www/Magick++/Montage.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/Magick++/NEWS.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/Magick++/PixelPacket.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/Magick++/Pixels.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/Magick++/README.txt
+  /usr/share/doc/ImageMagick-6.2.9.4/www/Magick++/STL.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/Magick++/TypeMetric.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/Magick++/index.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/Magick++/montage-sample-framed.jpg
+  /usr/share/doc/ImageMagick-6.2.9.4/www/Magick++/right_triangle.png
+  /usr/share/doc/ImageMagick-6.2.9.4/www/Magick++/thumbnail-anatomy-framed.fig
+  /usr/share/doc/ImageMagick-6.2.9.4/www/Magick++/thumbnail-anatomy-framed.jpg
+  /usr/share/doc/ImageMagick-6.2.9.4/www/Magick++/thumbnail-anatomy-plain.fig
+  /usr/share/doc/ImageMagick-6.2.9.4/www/Magick++/thumbnail-anatomy-plain.jpg
+  /usr/share/doc/ImageMagick-6.2.9.4/www/Magick++/thumbnail-sample-framed.jpg
+  /usr/share/doc/ImageMagick-6.2.9.4/www/Magick++/thumbnail-sample-plain.jpg
+  /usr/share/doc/ImageMagick-6.2.9.4/www/advanced-unix-installation.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/advanced-windows-installation.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/animate.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/api.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/api/animate.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/api/annotate.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/api/attribute.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/api/blob.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/api/cache.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/api/color.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/api/colorspace.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/api/compare.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/api/composite.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/api/constitute.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/api/decorate.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/api/display.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/api/draw.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/api/drawing-wand.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/api/effect.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/api/enhance.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/api/exception.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/api/fx.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/api/image.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/api/layer.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/api/list.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/api/magick-attribute.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/api/magick-image.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/api/magick-wand.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/api/magick.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/api/memory.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/api/module.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/api/monitor.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/api/montage.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/api/paint.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/api/pixel-iterator.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/api/pixel-wand.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/api/profile.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/api/quantize.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/api/registry.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/api/resize.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/api/resource.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/api/segment.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/api/shear.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/api/signature.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/api/stream.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/api/transform.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/api/version.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/architecture.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/binary-releases.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/changelog.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/color.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/command-line-options.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/command-line-processing.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/command-line-tools.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/compare.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/composite.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/conjure.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/contact.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/convert.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/cvs.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/display.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/download.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/examples.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/formats.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/history.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/identify.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/import.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/index.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/install-source.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/license.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/links.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/magick-core.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/magick-vector-graphics.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/magick-wand.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/magick.css
+  /usr/share/doc/ImageMagick-6.2.9.4/www/mailing-list.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/miff.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/mogrify.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/montage.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/perl-magick.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/quantize.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/resources.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/search.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/sponsors.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/stream.html
+  /usr/share/doc/ImageMagick-6.2.9.4/www/subversion.html
   /usr/share/man/man1/ImageMagick.1.gz
   /usr/share/man/man1/animate.1.gz
   /usr/share/man/man1/compare.1.gz
@@ -593,13 +593,10 @@ Files included in the binary packages:
   /usr/include/wand/pixel-wand.h
   /usr/include/wand/stream.h
   /usr/include/wand/wand-config.h
-  /usr/lib/libMagick++.a
   /usr/lib/libMagick++.dll.a
   /usr/lib/libMagick++.la
-  /usr/lib/libMagick.a
   /usr/lib/libMagick.dll.a
   /usr/lib/libMagick.la
-  /usr/lib/libWand.a
   /usr/lib/libWand.dll.a
   /usr/lib/libWand.la
   /usr/lib/pkgconfig/ImageMagick++.pc
@@ -612,6 +609,13 @@ Files included in the binary packages:
 ------------------
 
 Port Notes:
+
+----- version 6.2.9.8-1 -----
+Unofficial version bump.
+
+----- version 6.2.9.4-1 -----
+Unofficial version bump.
+Disabled static libraries and fixed documentation install.
 
 ----- version 6.2.9.1-1 -----
 Long-overdue version bump.
