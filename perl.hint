@@ -1,5 +1,5 @@
 category: Graphics Perl
-requires: cygwin libMagick10 perl
+requires: cygwin libMagick1 perl
 external-source: ImageMagick
 sdesc: "Image manipulation software suite (Perl bindings)"
 ldesc: "ImageMagick is a software suite to create, edit, and compose bitmap
