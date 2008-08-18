@@ -3,6 +3,8 @@ inherit perl
 DESCRIPTION="ImageMagick image processing suite"
 HOMEPAGE="http://www.imagemagick.org/"
 SRC_URI="ftp://ftp.imagemagick.org/pub/${PN}/${PN}-${PV%.${PVP[3]}}-${PVP[3]}.tar.bz2"
+PATCH_URI="6.4.2.10-no-undefined.patch"
+
 SRC_DIR=${P%.${PVP[3]}}
 
 abi=1
@@ -19,17 +21,18 @@ DIFF_EXCLUDES="Makefile.PL *-config.h version.h ltdl m4"
 
 src_compile() {
 	cd ${S}
-	cygautoreconf
+#	cygautoreconf
 
 	# PerlMagick/lndir.sh not shipped
-	mkdir -p ${B}/PerlMagick
-	cd ${B}/PerlMagick
-	lndirs ${S}/PerlMagick
+#	mkdir -p ${B}/PerlMagick
+#	cd ${B}/PerlMagick
+#	lndirs ${S}/PerlMagick
 
 	cd ${B}
 	cygconf \
 		--disable-static \
 		--disable-openmp \
+		--without-autotrace \
 		--without-dps --with-djvu \
 		--with-ltdl-include=/usr/include --with-ltdl-lib=/usr/lib \
 		--with-fontpath=/usr/share/fonts \

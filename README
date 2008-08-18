@@ -16,6 +16,7 @@ Runtime requirements:
   libfpx1-1.2.0.13-2
   libfreetype26-2.3.7-1
   libgraphviz4-2.18-1
+  libgs8-8.62-3
   libjasper1-1.900.1-2
   libjbig2-1.6-1
   libjpeg62-6b-12
@@ -36,7 +37,7 @@ Build requirements:
 (besides corresponding -devel packages)
   autoconf2.5-2.62-1
   automake1.10-1.10.1-1
-  binutils-20080523-2
+  binutils-20080524-2
   cygport-0.3.12-1
   gawk-3.1.6-1
   gcc-core-3.4.4-3
@@ -55,18 +56,18 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack ImageMagick-6.4.2.3-X-src.tar.bz2
+  unpack ImageMagick-6.4.2.10-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./ImageMagick-6.4.2.3-X.cygport all
+  cygport ./ImageMagick-6.4.2.10-X.cygport all
 
 This will create:
-  /usr/src/ImageMagick-6.4.2.3-X-src.tar.bz2
-  /usr/src/ImageMagick-6.4.2.3-X.tar.bz2
-  /usr/src/libMagick-devel-6.4.2.3-X.tar.bz2
-  /usr/src/libMagick1-6.4.2.3-X.tar.bz2
-  /usr/src/perl-Image-Magick-6.4.2.3-X.tar.bz2
+  /usr/src/ImageMagick-6.4.2.10-X-src.tar.bz2
+  /usr/src/ImageMagick-6.4.2.10-X.tar.bz2
+  /usr/src/libMagick-devel-6.4.2.10-X.tar.bz2
+  /usr/src/libMagick1-6.4.2.10-X.tar.bz2
+  /usr/src/perl-Image-Magick-6.4.2.10-X.tar.bz2
 
 -------------------------------------------
 
@@ -84,12 +85,12 @@ Files included in the binary packages:
   /usr/bin/mogrify.exe
   /usr/bin/montage.exe
   /usr/bin/stream.exe
-  /usr/share/doc/ImageMagick-6.4.2.3/ChangeLog
-  /usr/share/doc/ImageMagick-6.4.2.3/LICENSE
-  /usr/share/doc/ImageMagick-6.4.2.3/images/*
-  /usr/share/doc/ImageMagick-6.4.2.3/index.html
-  /usr/share/doc/ImageMagick-6.4.2.3/www/*
-  /usr/share/doc/ImageMagick-6.4.2.3/www/Magick++/*
+  /usr/share/doc/ImageMagick-6.4.2.10/ChangeLog
+  /usr/share/doc/ImageMagick-6.4.2.10/LICENSE
+  /usr/share/doc/ImageMagick-6.4.2.10/images/*
+  /usr/share/doc/ImageMagick-6.4.2.10/index.html
+  /usr/share/doc/ImageMagick-6.4.2.10/www/*
+  /usr/share/doc/ImageMagick-6.4.2.10/www/Magick++/*
   /usr/share/man/man1/ImageMagick.1.gz
   /usr/share/man/man1/animate.1.gz
   /usr/share/man/man1/compare.1.gz
@@ -480,9 +481,9 @@ Files included in the binary packages:
   /usr/lib/pkgconfig/MagickCore.pc
   /usr/lib/pkgconfig/MagickWand.pc
   /usr/lib/pkgconfig/Wand.pc
-  /usr/share/doc/ImageMagick-6.4.2.3/www/api/MagickCore/*
-  /usr/share/doc/ImageMagick-6.4.2.3/www/api/MagickWand/*
-  /usr/share/doc/ImageMagick-6.4.2.3/www/api/*
+  /usr/share/doc/ImageMagick-6.4.2.10/www/api/MagickCore/*
+  /usr/share/doc/ImageMagick-6.4.2.10/www/api/MagickWand/*
+  /usr/share/doc/ImageMagick-6.4.2.10/www/api/*
   /usr/share/man/man1/Magick++-config.1.gz
   /usr/share/man/man1/Magick-config.1.gz
   /usr/share/man/man1/MagickCore-config.1.gz
@@ -493,8 +494,9 @@ Files included in the binary packages:
 
 Port Notes:
 
------ version 6.4.2.3-1 -----
+----- version 6.4.2.10-1 -----
 Version bump.
+Added libgs dependency.
 
 ----- version 6.4.0.6-1 -----
 Version bump.

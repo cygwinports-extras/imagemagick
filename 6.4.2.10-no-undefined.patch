@@ -1,16 +1,15 @@
---- origsrc/ImageMagick-6.4.2/Magick++/Makefile.am	2008-04-27 19:22:53.000000000 -0500
-+++ src/ImageMagick-6.4.2/Magick++/Makefile.am	2008-07-16 11:51:10.187500000 -0500
-@@ -139,7 +139,7 @@
- 	Magick++/lib/Magick++/STL.h \
+--- origsrc/ImageMagick-6.4.2/Magick++/Makefile.am	2008-08-16 18:02:42.000000000 -0500
++++ src/ImageMagick-6.4.2/Magick++/Makefile.am	2008-08-17 21:44:52.325109200 -0500
+@@ -140,6 +140,7 @@
  	Magick++/lib/Magick++/TypeMetric.h
  
--Magick___lib_libMagick___la_LDFLAGS = \
-+Magick___lib_libMagick___la_LDFLAGS = -no-undefined \
- 	-version-info $(LIBRARY_CURRENT):$(LIBRARY_REVISION):$(LIBRARY_AGE)
+ Magick___lib_libMagick___la_LDFLAGS = \
++	-no-undefined \
+ 	-version-info $(MAGICK_LIBRARY_CURRENT):$(MAGICK_LIBRARY_REVISION):$(MAGICK_LIBRARY_AGE)
  Magick___lib_libMagick___la_LIBADD = $(MAGICKCORE_LIBS) $(MAGICKWAND_LIBS)
  
---- origsrc/ImageMagick-6.4.2/coders/Makefile.am	2008-04-27 18:11:28.000000000 -0500
-+++ src/ImageMagick-6.4.2/coders/Makefile.am	2008-07-16 11:50:48.718750000 -0500
+--- origsrc/ImageMagick-6.4.2/coders/Makefile.am	2008-07-30 21:07:16.000000000 -0500
++++ src/ImageMagick-6.4.2/coders/Makefile.am	2008-08-17 21:45:23.763212800 -0500
 @@ -442,7 +442,7 @@
  coders_fpx_la_SOURCES      = coders/fpx.c
  coders_fpx_la_CPPFLAGS     = $(MODULE_EXTRA_CPPFLAGS)
@@ -20,8 +19,8 @@
  
  # GIF coder module
  coders_gif_la_SOURCES      = coders/gif.c
---- origsrc/ImageMagick-6.4.2/configure.ac	2008-06-22 10:10:46.000000000 -0500
-+++ src/ImageMagick-6.4.2/configure.ac	2008-07-16 15:20:43.765625000 -0500
+--- origsrc/ImageMagick-6.4.2/configure.ac	2008-08-17 10:10:46.000000000 -0500
++++ src/ImageMagick-6.4.2/configure.ac	2008-08-17 21:46:19.998667500 -0500
 @@ -12,7 +12,7 @@
  #  See the License for the specific language governing permissions and
  #  limitations under the License.
@@ -31,15 +30,7 @@
  AC_INIT([ImageMagick],[6.4.2],[http://www.imagemagick.org],[ImageMagick])
  AC_CONFIG_SRCDIR([magick/MagickCore.h])
  AC_CONFIG_AUX_DIR([config])
-@@ -188,7 +188,6 @@
- AM_PROG_CC_C_O
- AC_PROG_INSTALL
- AC_PROG_MAKE_SET
--AC_PROG_RANLIB
- AC_COMPILE_WARNINGS
- AC_PROG_LN_S
- AM_WITH_DMALLOC
-@@ -210,7 +209,6 @@
+@@ -224,7 +224,6 @@
  cygwin_build='no'
  case "${host_os}" in
      cygwin* )
@@ -47,12 +38,12 @@
          cygwin_build='yes'
          GDI32_LIBS='-lgdi32'
      ;;
-@@ -1927,7 +1925,7 @@
- GVC_LIBS=""
+@@ -1781,7 +1780,7 @@
  GVC_PKG=""
  if test "x$with_gvc" = "xyes"; then
+     AC_MSG_RESULT([-------------------------------------------------------------])
 -    PKG_CHECK_MODULES(GVC,[libgvc >= 2.9.0], have_gvc=yes, have_gvc=no)
 +    PKG_CHECK_MODULES(GVC,[libgvc >= 2.9.0 libagraph], have_gvc=yes, have_gvc=no)
+     AC_MSG_RESULT([])
  fi
  
- if test "$have_gvc" = 'yes'; then
