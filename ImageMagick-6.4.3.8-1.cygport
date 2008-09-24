@@ -2,7 +2,7 @@ inherit perl
 
 DESCRIPTION="ImageMagick image processing suite"
 HOMEPAGE="http://www.imagemagick.org/"
-SRC_URI="ftp://ftp.imagemagick.org/pub/${PN}/${PN}-${PV%.${PVP[3]}}-${PVP[3]}.tar.bz2"
+SRC_URI="ftp://ftp.fifi.org/pub/${PN}/${PN}-${PV%.${PVP[3]}}-${PVP[3]}.tar.lzma"
 PATCH_URI="6.4.2.10-no-undefined.patch"
 
 SRC_DIR=${P%.${PVP[3]}}
@@ -21,12 +21,12 @@ DIFF_EXCLUDES="Makefile.PL *-config.h version.h ltdl m4"
 
 src_compile() {
 	cd ${S}
-#	cygautoreconf
+	cygautoreconf
 
 	# PerlMagick/lndir.sh not shipped
-#	mkdir -p ${B}/PerlMagick
-#	cd ${B}/PerlMagick
-#	lndirs ${S}/PerlMagick
+	mkdir -p ${B}/PerlMagick
+	cd ${B}/PerlMagick
+	lndirs ${S}/PerlMagick
 
 	cd ${B}
 	cygconf \
@@ -37,7 +37,7 @@ src_compile() {
 		--with-ltdl-include=/usr/include --with-ltdl-lib=/usr/lib \
 		--with-fontpath=/usr/share/fonts \
 		--with-gs-font-dir=/usr/share/ghostscript/fonts \
-		--with-windows-font-dir=/usr/share/fonts/corefonts \
+		--with-windows-font-dir=/usr/share/fonts/TTF \
 		--with-perl-options=INSTALLDIRS=vendor
 	cygmake
 	cygmake -C PerlMagick manifypods
