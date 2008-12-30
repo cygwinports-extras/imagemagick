@@ -2,20 +2,18 @@ inherit perl
 
 DESCRIPTION="ImageMagick image processing suite"
 HOMEPAGE="http://www.imagemagick.org/"
-SRC_URI="ftp://ftp.fifi.org/pub/${PN}/${PN}-${PV%.${PVP[3]}}-${PVP[3]}.tar.lzma"
+SRC_URI="ftp://ftp.fifi.org/pub/${PN}/${PN}-${PV%.${PV[4]}}-${PV[4]}.tar.lzma"
 PATCH_URI="6.4.2.10-no-undefined.patch"
 
-SRC_DIR=${P%.${PVP[3]}}
+SRC_DIR=${P%.${PV[4]}}-${PV[4]}
 
-abi=1
-PKG_NAMES="${PN} libMagick${abi} libMagick-devel perl-Image-Magick"
-PKG_HINTS="setup lib devel perl"
-PKG_CONTENTS[0]="--exclude=*-config.* --exclude=man3 --exclude=perl --exclude=api
-                 usr/bin/*.exe usr/share/doc/ usr/share/man/"
-PKG_CONTENTS[1]="usr/bin/*-${abi}.dll usr/lib/${P%.${PVP[3]}}/ usr/share/${P%.${PVP[3]}}/"
-PKG_CONTENTS[2]="usr/bin/*-config usr/include/ usr/lib/lib* usr/lib/pkgconfig/
-                 usr/share/doc/${P}/www/api/ usr/share/man/man1/*-config.*"
-PKG_CONTENTS[3]="${PERL_VENDORLIB#/} usr/share/man/man3/"
+PKG_NAMES="${PN} libMagick1 libMagick-devel perl-Image-Magick"
+ImageMagick_CONTENTS="--exclude=*-config.* --exclude=man3 --exclude=perl --exclude=api
+                      usr/bin/*.exe usr/share/doc/ usr/share/man/"
+libMagick1_CONTENTS="usr/bin/*-1.dll usr/lib/${P%.${PVP[3]}}/ usr/share/${P%.${PVP[3]}}/"
+libMagick_devel_CONTENTS="usr/bin/*-config usr/include/ usr/lib/lib* usr/lib/pkgconfig/
+                          usr/share/doc/${P}/www/api/ usr/share/man/man1/*-config.*"
+perl_Image_Magick_CONTENTS="${PERL_VENDORLIB#/} usr/share/man/man3/"
 
 DIFF_EXCLUDES="Makefile.PL *-config.h version.h ltdl m4"
 

@@ -8,37 +8,37 @@ effects, or draw text, lines, polygons, ellipses and Bezier curves.
 
 Runtime requirements:
   cygwin-1.5.25-15
-  glib2-2.16.5-1
   libbz2_1-1.0.5-2
-  libcairo2-1.6.4-1
+  libcairo2-1.8.6-1
   libdjvulibre21-3.5.21-1
   libfontconfig1-2.6.0-1
   libfpx1-1.2.0.13-2
   libfreetype26-2.3.7-1
-  libgraphviz4-2.18-1
-  libgs8-8.62-3
+  libglib2.0_0-2.18.3-1
+  libgraphviz4-2.20.3-1
+  libgs8-8.63-2
   libjasper1-1.900.1-2
   libjbig2-1.6-1
   libjpeg62-6b-12
   liblcms1-1.17-1
   libltdl7-2.2.6a-1
   libopenexr6-1.6.1-1
-  libpng12-1.2.31-1
-  librsvg2-2.20.0-1
+  libpng12-1.2.33-1
+  librsvg2_2-2.22.3-1
   libtiff5-3.8.2-3
-  libX11_6-1.1.3-1
-  libXext6-1.0.3-1
-  libxml2-2.6.32-2
+  libX11_6-1.1.5-1
+  libXext6-1.0.4-1
+  libxml2-2.7.2-1
   zlib-1.2.3-2
 (perl-Image-Magick)
   perl-5.10.0-5
 
 Build requirements:
 (besides corresponding -devel packages)
-  autoconf2.5-2.62-1
-  automake1.10-1.10.1-1
+  autoconf2.5-2.63-1
+  automake1.10-1.10.1-2
   binutils-20080624-2
-  cygport-0.4.0-1
+  cygport-0.4.3-1
   gawk-3.1.6-1
   gcc-core-3.4.4-3
   gcc-g++-3.4.4-3
@@ -57,18 +57,18 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack ImageMagick-6.4.3.8-X-src.tar.bz2
+  unpack ImageMagick-6.4.8.2-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./ImageMagick-6.4.3.8-X.cygport all
+  cygport ./ImageMagick-6.4.8.2-X.cygport all
 
 This will create:
-  /usr/src/ImageMagick-6.4.3.8-X-src.tar.bz2
-  /usr/src/ImageMagick-6.4.3.8-X.tar.bz2
-  /usr/src/libMagick-devel-6.4.3.8-X.tar.bz2
-  /usr/src/libMagick1-6.4.3.8-X.tar.bz2
-  /usr/src/perl-Image-Magick-6.4.3.8-X.tar.bz2
+  /usr/src/ImageMagick-6.4.8.2-X-src.tar.bz2
+  /usr/src/ImageMagick-6.4.8.2-X.tar.bz2
+  /usr/src/libMagick-devel-6.4.8.2-X.tar.bz2
+  /usr/src/libMagick1-6.4.8.2-X.tar.bz2
+  /usr/src/perl-Image-Magick-6.4.8.2-X.tar.bz2
 
 -------------------------------------------
 
@@ -86,12 +86,12 @@ Files included in the binary packages:
   /usr/bin/mogrify.exe
   /usr/bin/montage.exe
   /usr/bin/stream.exe
-  /usr/share/doc/ImageMagick-6.4.3.8/ChangeLog
-  /usr/share/doc/ImageMagick-6.4.3.8/LICENSE
-  /usr/share/doc/ImageMagick-6.4.3.8/images/*
-  /usr/share/doc/ImageMagick-6.4.3.8/index.html
-  /usr/share/doc/ImageMagick-6.4.3.8/www/*
-  /usr/share/doc/ImageMagick-6.4.3.8/www/Magick++/*
+  /usr/share/doc/ImageMagick-6.4.8.2/ChangeLog
+  /usr/share/doc/ImageMagick-6.4.8.2/LICENSE
+  /usr/share/doc/ImageMagick-6.4.8.2/images/*
+  /usr/share/doc/ImageMagick-6.4.8.2/index.html
+  /usr/share/doc/ImageMagick-6.4.8.2/www/*
+  /usr/share/doc/ImageMagick-6.4.8.2/www/Magick++/*
   /usr/share/man/man1/ImageMagick.1.gz
   /usr/share/man/man1/animate.1.gz
   /usr/share/man/man1/compare.1.gz
@@ -109,239 +109,239 @@ Files included in the binary packages:
   /usr/bin/cygMagick++-1.dll
   /usr/bin/cygMagickCore-1.dll
   /usr/bin/cygMagickWand-1.dll
-  /usr/lib/ImageMagick-6.4.2/config/colors.xml
-  /usr/lib/ImageMagick-6.4.2/config/configure.xml
-  /usr/lib/ImageMagick-6.4.2/config/delegates.xml
-  /usr/lib/ImageMagick-6.4.2/config/english.xml
-  /usr/lib/ImageMagick-6.4.2/config/francais.xml
-  /usr/lib/ImageMagick-6.4.2/config/locale.xml
-  /usr/lib/ImageMagick-6.4.2/config/type-ghostscript.xml
-  /usr/lib/ImageMagick-6.4.2/config/type-solaris.xml
-  /usr/lib/ImageMagick-6.4.2/config/type-windows.xml
-  /usr/lib/ImageMagick-6.4.2/config/type.xml
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/art.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/art.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/avi.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/avi.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/avs.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/avs.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/bmp.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/bmp.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/braille.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/braille.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/caption.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/caption.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/cin.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/cin.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/cip.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/cip.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/clip.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/clip.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/clipboard.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/clipboard.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/cmyk.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/cmyk.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/cut.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/cut.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/dcm.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/dcm.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/dds.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/dds.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/dib.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/dib.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/dng.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/dng.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/dot.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/dot.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/dps.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/dps.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/dpx.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/dpx.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/emf.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/emf.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/ept.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/ept.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/exr.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/exr.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/fax.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/fax.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/fits.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/fits.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/fpx.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/fpx.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/gif.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/gif.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/gradient.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/gradient.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/gray.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/gray.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/histogram.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/histogram.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/html.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/html.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/icon.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/icon.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/info.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/info.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/ipl.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/ipl.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/jbig.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/jbig.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/jp2.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/jp2.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/jpeg.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/jpeg.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/label.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/label.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/magick.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/magick.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/map.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/map.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/mat.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/mat.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/matte.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/matte.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/meta.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/meta.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/miff.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/miff.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/mono.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/mono.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/mpc.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/mpc.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/mpeg.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/mpeg.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/mpr.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/mpr.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/msl.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/msl.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/mtv.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/mtv.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/mvg.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/mvg.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/null.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/null.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/otb.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/otb.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/palm.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/palm.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/pattern.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/pattern.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/pcd.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/pcd.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/pcl.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/pcl.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/pcx.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/pcx.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/pdb.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/pdb.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/pdf.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/pdf.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/pict.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/pict.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/pix.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/pix.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/plasma.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/plasma.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/png.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/png.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/pnm.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/pnm.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/preview.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/preview.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/ps.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/ps.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/ps2.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/ps2.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/ps3.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/ps3.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/psd.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/psd.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/pwp.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/pwp.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/raw.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/raw.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/rgb.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/rgb.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/rla.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/rla.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/rle.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/rle.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/scr.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/scr.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/sct.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/sct.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/sfw.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/sfw.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/sgi.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/sgi.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/stegano.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/stegano.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/sun.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/sun.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/svg.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/svg.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/tga.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/tga.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/thumbnail.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/thumbnail.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/tiff.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/tiff.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/tile.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/tile.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/tim.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/tim.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/ttf.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/ttf.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/txt.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/txt.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/uil.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/uil.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/url.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/url.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/uyvy.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/uyvy.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/vicar.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/vicar.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/vid.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/vid.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/viff.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/viff.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/wbmp.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/wbmp.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/wmf.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/wmf.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/wpg.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/wpg.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/x.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/x.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/xbm.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/xbm.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/xc.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/xc.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/xcf.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/xcf.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/xpm.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/xpm.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/xps.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/xps.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/xwd.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/xwd.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/ycbcr.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/ycbcr.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/yuv.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/coders/yuv.la
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/filters/analyze.dll
-  /usr/lib/ImageMagick-6.4.2/modules-Q16/filters/analyze.la
-  /usr/share/ImageMagick-6.4.2/ChangeLog
-  /usr/share/ImageMagick-6.4.2/LICENSE
-  /usr/share/ImageMagick-6.4.2/NEWS.txt
-  /usr/share/ImageMagick-6.4.2/config/coder.xml
-  /usr/share/ImageMagick-6.4.2/config/log.xml
-  /usr/share/ImageMagick-6.4.2/config/magic.xml
-  /usr/share/ImageMagick-6.4.2/config/mime.xml
-  /usr/share/ImageMagick-6.4.2/config/sRGB.icm
-  /usr/share/ImageMagick-6.4.2/config/thresholds.xml
+  /usr/lib/ImageMagick-6.4.8/config/colors.xml
+  /usr/lib/ImageMagick-6.4.8/config/configure.xml
+  /usr/lib/ImageMagick-6.4.8/config/delegates.xml
+  /usr/lib/ImageMagick-6.4.8/config/english.xml
+  /usr/lib/ImageMagick-6.4.8/config/francais.xml
+  /usr/lib/ImageMagick-6.4.8/config/locale.xml
+  /usr/lib/ImageMagick-6.4.8/config/type-ghostscript.xml
+  /usr/lib/ImageMagick-6.4.8/config/type-solaris.xml
+  /usr/lib/ImageMagick-6.4.8/config/type-windows.xml
+  /usr/lib/ImageMagick-6.4.8/config/type.xml
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/art.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/art.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/avi.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/avi.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/avs.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/avs.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/bmp.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/bmp.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/braille.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/braille.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/caption.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/caption.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/cin.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/cin.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/cip.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/cip.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/clip.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/clip.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/clipboard.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/clipboard.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/cmyk.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/cmyk.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/cut.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/cut.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/dcm.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/dcm.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/dds.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/dds.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/dib.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/dib.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/dng.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/dng.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/dot.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/dot.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/dps.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/dps.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/dpx.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/dpx.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/emf.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/emf.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/ept.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/ept.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/exr.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/exr.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/fax.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/fax.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/fits.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/fits.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/fpx.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/fpx.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/gif.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/gif.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/gradient.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/gradient.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/gray.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/gray.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/histogram.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/histogram.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/html.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/html.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/icon.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/icon.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/info.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/info.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/ipl.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/ipl.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/jbig.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/jbig.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/jp2.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/jp2.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/jpeg.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/jpeg.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/label.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/label.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/magick.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/magick.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/map.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/map.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/mat.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/mat.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/matte.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/matte.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/meta.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/meta.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/miff.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/miff.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/mono.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/mono.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/mpc.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/mpc.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/mpeg.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/mpeg.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/mpr.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/mpr.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/msl.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/msl.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/mtv.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/mtv.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/mvg.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/mvg.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/null.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/null.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/otb.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/otb.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/palm.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/palm.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/pattern.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/pattern.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/pcd.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/pcd.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/pcl.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/pcl.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/pcx.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/pcx.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/pdb.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/pdb.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/pdf.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/pdf.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/pict.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/pict.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/pix.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/pix.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/plasma.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/plasma.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/png.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/png.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/pnm.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/pnm.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/preview.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/preview.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/ps.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/ps.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/ps2.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/ps2.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/ps3.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/ps3.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/psd.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/psd.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/pwp.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/pwp.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/raw.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/raw.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/rgb.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/rgb.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/rla.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/rla.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/rle.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/rle.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/scr.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/scr.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/sct.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/sct.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/sfw.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/sfw.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/sgi.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/sgi.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/stegano.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/stegano.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/sun.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/sun.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/svg.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/svg.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/tga.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/tga.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/thumbnail.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/thumbnail.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/tiff.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/tiff.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/tile.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/tile.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/tim.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/tim.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/ttf.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/ttf.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/txt.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/txt.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/uil.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/uil.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/url.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/url.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/uyvy.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/uyvy.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/vicar.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/vicar.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/vid.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/vid.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/viff.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/viff.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/wbmp.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/wbmp.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/wmf.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/wmf.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/wpg.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/wpg.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/x.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/x.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/xbm.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/xbm.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/xc.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/xc.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/xcf.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/xcf.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/xpm.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/xpm.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/xps.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/xps.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/xwd.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/xwd.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/ycbcr.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/ycbcr.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/yuv.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/coders/yuv.la
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/filters/analyze.dll
+  /usr/lib/ImageMagick-6.4.8/modules-Q16/filters/analyze.la
+  /usr/share/ImageMagick-6.4.8/ChangeLog
+  /usr/share/ImageMagick-6.4.8/LICENSE
+  /usr/share/ImageMagick-6.4.8/NEWS.txt
+  /usr/share/ImageMagick-6.4.8/config/coder.xml
+  /usr/share/ImageMagick-6.4.8/config/log.xml
+  /usr/share/ImageMagick-6.4.8/config/magic.xml
+  /usr/share/ImageMagick-6.4.8/config/mime.xml
+  /usr/share/ImageMagick-6.4.8/config/sRGB.icm
+  /usr/share/ImageMagick-6.4.8/config/thresholds.xml
 
 (perl-Image-Magick)
   /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Image/Magick.pm
@@ -482,9 +482,9 @@ Files included in the binary packages:
   /usr/lib/pkgconfig/MagickCore.pc
   /usr/lib/pkgconfig/MagickWand.pc
   /usr/lib/pkgconfig/Wand.pc
-  /usr/share/doc/ImageMagick-6.4.3.8/www/api/MagickCore/*
-  /usr/share/doc/ImageMagick-6.4.3.8/www/api/MagickWand/*
-  /usr/share/doc/ImageMagick-6.4.3.8/www/api/*
+  /usr/share/doc/ImageMagick-6.4.8.2/www/api/MagickCore/*
+  /usr/share/doc/ImageMagick-6.4.8.2/www/api/MagickWand/*
+  /usr/share/doc/ImageMagick-6.4.8.2/www/api/*
   /usr/share/man/man1/Magick++-config.1.gz
   /usr/share/man/man1/Magick-config.1.gz
   /usr/share/man/man1/MagickCore-config.1.gz
@@ -494,6 +494,9 @@ Files included in the binary packages:
 ------------------
 
 Port Notes:
+
+----- version 6.4.8.2-1 -----
+Version bump.
 
 ----- version 6.4.3.8-1 -----
 Version bump.
