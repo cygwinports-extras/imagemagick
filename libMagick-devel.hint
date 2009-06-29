@@ -1,5 +1,5 @@
 category: Graphics
-requires: cygwin libMagick1 libX11-devel libXext-devel libbz2-devel libfontconfig-devel libjpeg-devel liblcms-devel libtiff-devel libtool
+requires: libMagick1 libX11-devel libXext-devel libbz2-devel libfontconfig-devel libjpeg-devel liblcms-devel libtiff-devel libtool
 external-source: ImageMagick
 sdesc: "Image manipulation software suite (development)"
 ldesc: "ImageMagick is a software suite to create, edit, and compose bitmap
