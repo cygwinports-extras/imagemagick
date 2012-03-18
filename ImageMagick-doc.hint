@@ -1,6 +1,7 @@
 category: Graphics
-requires: libMagickCore5
-sdesc: "Image manipulation software suite (utilities)"
+requires:
+external-source: ImageMagick
+sdesc: "Image manipulation software suite (documentation)"
 ldesc: "ImageMagick is a software suite to create, edit, and compose bitmap
 images. It can read, convert and write images in a large variety of
 formats. Use ImageMagick to translate, flip, mirror, rotate, scale,

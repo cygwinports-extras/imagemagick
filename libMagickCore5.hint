@@ -1,5 +1,5 @@
 category: Graphics
-requires: libglib2.0_0 libX11_6 libXext6 libbz2_1 libcairo2 libdjvulibre21 libfontconfig1 libfpx1 libfreetype26 libgraphviz4 libgs8 libjasper1 libjbig2 libjpeg62 liblcms1 libltdl7 libopenexr6 libpng12 librsvg2_2 libtiff5 libxml2 zlib
+requires: libautotrace3 libbz2_1 libcairo2 libdjvulibre21 libfftw3_3 libfontconfig1 libfpx1 libfreetype6 libgcc1 libglib2.0_0 libgomp1 libgraph5 libgs9 libgvc6 libIlmImf6 libjasper1 libjbig2 libjpeg8 liblcms2_2 liblqr1_0 libltdl7 liblzma5 libpango1.0_0 libpng14 librsvg2_2 libstdc++6 libtiff5 libwebp2 libX11_6 libXext6 libxml2 zlib0
 external-source: ImageMagick
 sdesc: "Image manipulation software suite (runtime)"
 ldesc: "ImageMagick is a software suite to create, edit, and compose bitmap

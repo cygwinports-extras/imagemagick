@@ -1,0 +1,56 @@
+inherit perl
+
+DESCRIPTION="ImageMagick image processing suite"
+HOMEPAGE="http://www.imagemagick.org/"
+SRC_URI="http://www.imagemagick.org/download/${PN}-${PV%.${PV[4]}}-${PV[4]}.tar.xz"
+SRC_DIR=${P%.${PV[4]}}-${PV[4]}
+PATCH_URI="6.7.5.10-automake-1_11_1.patch"
+
+PKG_NAMES="${PN} ${PN}-doc libMagickCore5 libMagick-devel perl-Image-Magick"
+ImageMagick_CONTENTS="--exclude=*-config.* --exclude=index.html --exclude=www
+                      --exclude=images --exclude=man3 --exclude=perl
+                      etc/ usr/bin/*.exe usr/share/doc/ usr/share/man/"
+ImageMagick_doc_CONTENTS="usr/share/doc/${PN}/index.html usr/share/doc/${PN}/*/"
+libMagickCore5_CONTENTS="usr/bin/*-5.dll usr/lib/${P%.${PV[4]}}/ usr/share/${P%.${PV[4]}}/"
+libMagick_devel_CONTENTS="usr/bin/*-config usr/include/ usr/lib/lib* usr/lib/pkgconfig/
+                          usr/share/man/man1/*-config.*"
+perl_Image_Magick_CONTENTS="${PERL_VENDORLIB#/} usr/share/man/man3/"
+
+DIFF_EXCLUDES="Makefile.PL *-config.h version.h ltdl m4"
+
+src_compile() {
+	cd ${S}
+	cygautoreconf
+
+	cd ${B}
+	cygconf \
+		--disable-static --without-modules --with-quantum-depth=16 \
+		--with-autotrace --with-bzlib --with-djvu --with-dps \
+		--with-fftw --with-fontconfig --with-fpx --with-freetype \
+		--with-gslib --with-gvc --with-jbig --with-jpeg --with-jp2 \
+		--without-lcms --with-lcms2 --with-lqr --with-lzma \
+		--with-openexr --with-pango --with-png --with-rsvg --with-tiff \
+		--with-webp --without-wmf --with-x --with-xml --with-zlib \
+		--without-included-ltdl --with-ltdl-include=/usr/include --with-ltdl-lib=/usr/lib \
+		--with-fontpath=/usr/share/fonts \
+		--with-gs-font-dir=/usr/share/ghostscript/fonts \
+		--with-windows-font-dir=/usr/share/fonts/TTF \
+		--with-perl --with-perl-options=INSTALLDIRS=vendor
+	cygmake
+}
+
+src_check() {
+	cd ${B}
+	make check
+}
+
+src_install() {
+	cd ${B}
+	cyginstall
+	perl_postinst
+
+	mv ${D}/etc/${PN}/* ${D}/usr/lib/${PN}-${PV%.*}/config/
+	keepdir /etc/${PN}
+}
+
+KEEP_LA_FILES="module"
